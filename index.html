@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bijak Sejarah SPM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Bijak Sejarah SPM</h1>
+  <div class="container">
+    <div id="board" class="board">
+      <div class="cell" data-cell data-index="1"></div>
+      <div class="cell" data-cell data-index="2"></div>
+      <div class="cell" data-cell data-index="3"></div>
+      <div class="cell" data-cell data-index="4"></div>
+      <div class="cell" data-cell data-index="5"></div>
+      <div class="cell" data-cell data-index="6"></div>
+      <div class="cell" data-cell data-index="7"></div>
+      <div class="cell" data-cell data-index="8"></div>
+      <div class="cell" data-cell data-index="9"></div>
+    </div>
+    <div id="question" class="question">
+      <p id="questionText"></p>
+      <img id="questionImage" src="" alt="Question Image" style="display:none;">
+      <div id="choices"></div>
+    </div>
+  </div>
+  <div id="turnIndicator" class="turn-indicator">
+    Giliran pemain <span id="currentPlayer"></span>
+  </div>
+  <div id="winningMessage" class="winning-message">
+    <div data-winning-message-text></div>
+    <button id="restartButton">Restart</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

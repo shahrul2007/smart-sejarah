@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+  background-image: url('img/Untitled5_20240729051323.jpg'); 
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin-right: 20px; /* Tambahkan jarak antara papan dan soal */
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #ff37;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+  border-radius: 50%; /* Membuat petak menjadi bulat */
+  position: relative;
+}
+
+.cell::before {
+  content: attr(data-index);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #000;
+  display: block;
+}
+
+.cell.x::before,
+.cell.o::before {
+  content: ''; 
+}
+
+.cell.x {
+  color: blue;
+}
+
+.cell.o {
+  color: red;
+}
+
+.winning-message {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.winning-message.show {
+  display: block;
+}
+
+.question {
+  display: none;
+  text-align: center;
+}
+
+#questionImage {
+  max-width: 200px; /* Atur lebar maksimum gambar */
+  height: auto;
+  margin: 20px 0;
+}
+
+.choice {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.choice:hover {
+  background-color: #0056b3;
+}
+
+.turn-indicator {
+  margin-top:20px;
+  font-size: 25px;
+  color: #333;
+}
