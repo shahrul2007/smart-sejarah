@@ -23,6 +23,7 @@ const turnIndicator = document.getElementById('turnIndicator');
 const currentPlayerElement = document.getElementById('currentPlayer');
 let oTurn;
 let currentCell;
+let isQuestionActive = false;
 
 // sound effects
 const correctSound = new Audio('ding-sound-effect_1.mp3'); 
@@ -141,6 +142,7 @@ restartButton.addEventListener('click', startGame);
 
 function startGame() {
   oTurn = false;
+  isQuestionActive = false;
   updateTurnIndicator();
   cellElements.forEach(cell => {
     cell.classList.remove(X_CLASS);
@@ -148,7 +150,7 @@ function startGame() {
     cell.textContent = ''; 
     cell.setAttribute('data-index', cell.getAttribute('data-index')); // Reset
     cell.removeEventListener('click', handleClick);
-    cell.addEventListener('click', handleClick, { once: true });
+    cell.addEventListener('click', handleClick);
   });
   setBoardHoverClass();
   winningMessageElement.classList.remove('show');
@@ -157,7 +159,11 @@ function startGame() {
 }
 
 function handleClick(e) {
+  if (isQuestionActive) return;
+  
   currentCell = e.target;
+  currentCell.removeEventListener('click',handleClick);
+  isQuestionActive = true;
   askQuestion();
 }
 
@@ -200,11 +206,13 @@ function checkAnswer(selectedChoice, correctAnswer) {
   } else {
     wrongSound.play(); // Play wrong sound
     alert("Jawapan salah.");
+    currentCell.addEventListener('click', handleClick);
     questionElement.style.display = 'none';
     currentCell.addEventListener('click', handleClick, { once: true }); 
     swapTurns();
     setBoardHoverClass();
   }
+  isQuestionActive = false;
 }
 
 function placeMark(cell, currentClass) {

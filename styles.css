@@ -10,7 +10,7 @@ body {
   height: 100vh;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f0f0f0;
+  background: linear-gradient(135deg, #f86 0%, #ff78 100%);
   background-image: url('Untitled5_20240729051323.jpg'); 
   background-position: bottom center;
   background-repeat: no-repeat;
