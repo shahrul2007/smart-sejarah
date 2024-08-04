@@ -11,7 +11,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f0f0f0;
-  background-image: url('img/Untitled5_20240729051323.jpg'); 
+  background-image: url('Untitled5_20240729051323.jpg'); 
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,7 +33,7 @@ h1 {
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: repeat(3, 100px);
   gap: 5px;
-  margin-right: 20px; /* Tambahkan jarak antara papan dan soal */
+  margin-right: 20px; /* jarak*/
 }
 
 .cell {
@@ -80,9 +80,9 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(1, 1, 1, 0.8);
   color: #fff;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -96,7 +96,7 @@ h1 {
 }
 
 #questionImage {
-  max-width: 200px; /* Atur lebar maksimum gambar */
+  max-width: 200px; /* saiz gambar*/
   height: auto;
   margin: 20px 0;
 }
@@ -105,18 +105,19 @@ h1 {
   display: block;
   margin: 10px 0;
   padding: 10px;
-  background-color: #007bff;
+  background-color: #007;
   color: #fff;
   border: none;
   cursor: pointer;
 }
 
 .choice:hover {
-  background-color: #0056b3;
+  background-color: #f45;
 }
 
 .turn-indicator {
   margin-top:20px;
   font-size: 25px;
-  color: #333;
+  color: #ffffffff;
+  font-family: Sans-Serif;
 }

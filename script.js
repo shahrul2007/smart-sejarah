@@ -24,9 +24,9 @@ const currentPlayerElement = document.getElementById('currentPlayer');
 let oTurn;
 let currentCell;
 
-// Load sound effects
-const correctSound = new Audio('ding-sound-effect_1.mp3'); // sound jawapan betul
-const wrongSound = new Audio('path/to/your/correct-sound.mp3'); 
+// sound effects
+const correctSound = new Audio('ding-sound-effect_1.mp3'); 
+const wrongSound = new Audio(''); 
 const winSound = new Audio('audience-clapping-sound-effect_512cqRc.mp3');
 
 const questions = [
@@ -67,7 +67,7 @@ const questions = [
   },
   {
     question: "Apakah kesan Revolusi Perancis yang berlaku pada tahun 1789?",
-    choices: ["Penyatuan negeri bangsa", "perlaksanaan sistem cukai", "Pemerintahan beraja barakhir", "Pengenalan sistem demokrasi"],
+    choices: ["Penyatuan negeri bangsa", "perlaksanaan sistem cukai", "Pemerintahan beraja berakhir", "Pengenalan sistem demokrasi"],
     answer: "Pemerintahan beraja berakhir"
   },
   {
@@ -109,13 +109,13 @@ const questions = [
     question: "Bagaimanakah tokoh berikut menangani kekejaman komunis di Tanah Melayu?",
     choices: ["Melaksanakan darurat", "Membawa masuk tentera luar", "Menganjurkan perjanjian damai", "Membuka perkampungan baru"],
     answer: "Melaksanakan darurat",
-    image: "img/IMG_20240726_051543.jpg"
+    image: "IMG_20240726_051543.jpg"
   },
   {
     question: "Apakah persamaan idea negara merdeka bagi parti politik berikut?",
     choices: ["Menubuhkan kerjasama kaum" , "Membentuk negara demokrasi", "Menolak kerjasama dengan penjajah", "Mengutamakan kerakyatan sama rata"],
     answer: "Membentuk negara demokrasi",
-    image: "img/IMG_20240729_034414.jpg"
+    image: "IMG_20240729_034414.jpg"
   },
   {
     question: "Apakah hasrat Parti Kebangsaan Melayu Malaya (PKMM) memperjuangkan kemerdekaan melalui konsep Melayu Raya",
@@ -131,7 +131,7 @@ const questions = [
     question: "Bagaimanakah tokoh berikut mengetepikan Perjanjian Versailles yang telah ditandatangani pada tahun 1919?",
     choices: ["Memperkukuh sistem monarki", "Menyertai kuasa Bersekutu", "Melancarkan gerakan revolusi", "Menduduki wilayah Rhineland"],
     answer: "Menduduki wilayah Rhineland",
-    image: "img/IMG_20240731_021955.jpg"
+    image: "IMG_20240731_021955.jpg"
   }
 ];
 
@@ -145,8 +145,8 @@ function startGame() {
   cellElements.forEach(cell => {
     cell.classList.remove(X_CLASS);
     cell.classList.remove(O_CLASS);
-    cell.textContent = ''; // Clear any text
-    cell.setAttribute('data-index', cell.getAttribute('data-index')); // Reset angka
+    cell.textContent = ''; 
+    cell.setAttribute('data-index', cell.getAttribute('data-index')); // Reset
     cell.removeEventListener('click', handleClick);
     cell.addEventListener('click', handleClick, { once: true });
   });
@@ -185,10 +185,10 @@ function askQuestion() {
 
 function checkAnswer(selectedChoice, correctAnswer) {
   if (selectedChoice === correctAnswer) {
-    correctSound.play(); // Play correct sound
+    correctSound.play(); 
     const currentClass = oTurn ? O_CLASS : X_CLASS;
     placeMark(currentCell, currentClass);
-    questionElement.style.display = 'none'; // Hide the question element after answering correctly
+    questionElement.style.display = 'none'; 
     if (checkWin(currentClass)) {
       endGame(false);
     } else if (isDraw()) {
@@ -200,8 +200,8 @@ function checkAnswer(selectedChoice, correctAnswer) {
   } else {
     wrongSound.play(); // Play wrong sound
     alert("Jawapan salah.");
-    questionElement.style.display = 'none'; // Hide the question element after answering incorrectly
-    currentCell.addEventListener('click', handleClick, { once: true }); // Re-enable the cell for future clicks
+    questionElement.style.display = 'none';
+    currentCell.addEventListener('click', handleClick, { once: true }); 
     swapTurns();
     setBoardHoverClass();
   }
@@ -209,7 +209,7 @@ function checkAnswer(selectedChoice, correctAnswer) {
 
 function placeMark(cell, currentClass) {
   cell.classList.add(currentClass);
-  cell.textContent = currentClass.toUpperCase(); // Add X or O to the cell
+  cell.textContent = currentClass.toUpperCase(); 
 }
 
 function swapTurns() {
@@ -245,11 +245,11 @@ function endGame(draw) {
   if (draw) {
     winningMessageTextElement.innerText = 'Seri!';
   } else {
-    winningMessageTextElement.innerText = `${oTurn ? "O's" : "X's"} Menang!`;
-    winSound.play(); // Play win sound
+    winningMessageTextElement.innerText = `${oTurn ? "O" : "X"} Menang!`;
+    winSound.play(); 
   }
   winningMessageElement.classList.add('show');
-  questionElement.style.display = 'none'; // Hide the question element at the end of the game
+  questionElement.style.display = 'none'; 
 }
 
 function updateTurnIndicator() {
