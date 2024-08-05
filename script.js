@@ -47,7 +47,7 @@ const questions = [
     answer: "Al-ghaniy"
   },
   {
-    question: "Mengapakah kerajaan kesultanan Melayu Melaka mewujudkan jawatan laksamana ?",
+    question: "Mengapakah kerajaan kesultanan Melayu Melaka mewujudkan jawatan laksamana?",
     choices: ["Melicinkan urusan cukai di pelabuhan", "Mengetuai angkatan tentera", "Mengawal keamanan dalam negeri", "Menjaga keselamatan di laut"],
     answer: "Menjaga keselamatan di laut"
   },
@@ -57,7 +57,7 @@ const questions = [
     answer: "Memilih Yang di-Pertuan Agong"
   },
   {
-    question: "Mengapakah kerajaan Persekutuan membentuk Jawatankuasa Pilihan Raya",
+    question: "Mengapakah kerajaan Persekutuan membentuk Jawatankuasa Pilihan Raya?",
     choices: ["Meluluskan undang-undang pilihan raya", "Mengkaji tentang pilihan raya", "Menentukan sempadan pilihan raya", "Menjalankan pendaftaran pilihan raya"],
     answer: "Mengkaji tentang pilihan raya"
   },
@@ -77,7 +77,7 @@ const questions = [
     answer: "Membendung idea gerakan Islam Timur Tengah"
   },
   {
-    question: "Mengapakah perlaksanaan pertadbiran Tentera British (BMA) di Tanah Melayu mengalami kegagalan",
+    question: "Mengapakah perlaksanaan pertadbiran Tentera British (BMA) di Tanah Melayu mengalami kegagalan?",
     choices: ["Ketiadaan sokongan", "Kekurangan tenaga mahir", "Mendapat tentangan penduduk", "kesukaran memulihkan sosioekonomi"],
     answer: "kesukaran memulihkan sosioekonomi"
   },
@@ -87,7 +87,7 @@ const questions = [
     answer: "Mengetatkan syarat kewarganegaraan"
   },
   {
-    question: "Apakah langkah yang dilaksanakan melalui perlaksanaan Undang-Undang Darurat",
+    question: "Apakah langkah yang dilaksanakan melalui perlaksanaan Undang-Undang Darurat?",
     choices: ["Melonggarkan syarat kerakyatan", "Menawarkan pengampunan", "Melaksanakan rundingan", "Menangkap pemimpin radikal"],
     answer: "Menangkap pemimpin radikal"
   },
@@ -113,7 +113,7 @@ const questions = [
     image: "IMG_20240726_051543.jpg"
   },
   {
-    question: "Apakah hasrat Parti Kebangsaan Melayu Malaya (PKMM) memperjuangkan kemerdekaan melalui konsep Melayu Raya",
+    question: "Apakah hasrat Parti Kebangsaan Melayu Malaya (PKMM) memperjuangkan kemerdekaan melalui konsep Melayu Raya?",
     choices: ["Memelihara status quo", "Mendaulatkan hak rakyat", "Mewujudkan kerjasama kaum", "Membentuk negara demokrasi"],
     answer: "Mendaulatkan hak rakyat"
   },
@@ -134,7 +134,7 @@ const questions = [
     answer: "Membentuk dasar ekonomi Baru"
   },
   {
-    question: "Gambar berikut ialah Anugerah Langkawi yang diberikan kepada warganegara Malaysia yang memberi komitmen dan sumbangan besar terhadap negara.Apakah bidang yang terlibat ",
+    question: "Gambar berikut ialah Anugerah Langkawi yang diberikan kepada warganegara Malaysia yang memberi komitmen dan sumbangan besar terhadap negara.Apakah bidang yang terlibat? ",
     choices: ["Sungai", "Kesihatan", "Alam sekitar", "Rumah kebajikan"],
     answer: "Alam sekitar",
     image: "SGN_08_06_2024_1722879666298.png"
