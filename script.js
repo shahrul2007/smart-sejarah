@@ -113,15 +113,20 @@ const questions = [
     image: "IMG_20240726_051543.jpg"
   },
   {
-    question: "Apakah persamaan idea negara merdeka bagi parti politik berikut?",
-    choices: ["Menubuhkan kerjasama kaum" , "Membentuk negara demokrasi", "Menolak kerjasama dengan penjajah", "Mengutamakan kerakyatan sama rata"],
-    answer: "Membentuk negara demokrasi",
-    image: "IMG_20240729_034414.jpg"
-  },
-  {
     question: "Apakah hasrat Parti Kebangsaan Melayu Malaya (PKMM) memperjuangkan kemerdekaan melalui konsep Melayu Raya",
     choices: ["Memelihara status quo", "Mendaulatkan hak rakyat", "Mewujudkan kerjasama kaum", "Membentuk negara demokrasi"],
     answer: "Mendaulatkan hak rakyat"
+  },
+  {
+    question: "Bagaimanakah tokoh berikut mengetepikan Perjanjian Versailles yang telah ditandatangani pada tahun 1919?",
+    choices: ["Memperkukuh sistem monarki", "Menyertai kuasa Bersekutu", "Melancarkan gerakan revolusi", "Menduduki wilayah Rhineland"],
+    answer: "Menduduki wilayah Rhineland",
+    image: "IMG_20240731_021955.jpg"
+  },
+  {
+    question: "Mengapakah institusi kehakiman harus bebas daripada pengaruh politik?",
+    choices: ["Memastikan keadilan dapat ditegakkan", "Mengelakkan kelewatan perbicaraan sesuatu kes", "Menentukan kesahihan buktiyang dikemukakan", "Menjamin perbicaraan kes pihak berkepentingan diutamakan"],
+    answer: "Memastikan keadilan dapat ditegakkan"
   },
   {
     question: "Majlis Perundangan Negara (MAPEN) ditubuhkan pada Januari 1970.Apakah kesan penubuhan majlis tersebut?",
@@ -129,10 +134,10 @@ const questions = [
     answer: "Membentuk dasar ekonomi Baru"
   },
   {
-    question: "Bagaimanakah tokoh berikut mengetepikan Perjanjian Versailles yang telah ditandatangani pada tahun 1919?",
-    choices: ["Memperkukuh sistem monarki", "Menyertai kuasa Bersekutu", "Melancarkan gerakan revolusi", "Menduduki wilayah Rhineland"],
-    answer: "Menduduki wilayah Rhineland",
-    image: "IMG_20240731_021955.jpg"
+    question: "Gambar berikut ialah Anugerah Langkawi yang diberikan kepada warganegara Malaysia yang memberi komitmen dan sumbangan besar terhadap negara.Apakah bidang yang terlibat ",
+    choices: ["Sungai", "Kesihatan", "Alam sekitar", "Rumah kebajikan"],
+    answer: "Alam sekitar",
+    image: "SGN_08_06_2024_1722879666298.png"
   }
 ];
 

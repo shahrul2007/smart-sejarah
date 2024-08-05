@@ -93,6 +93,8 @@ h1 {
 .question {
   display: none;
   text-align: center;
+  font-size: 20px;
+  font-family: Times New Roman;
 }
 
 #questionImage {
@@ -109,6 +111,8 @@ h1 {
   color: #fff;
   border: none;
   cursor: pointer;
+  font-size: 15px;
+  font-family: Times New Roman;
 }
 
 .choice:hover {
@@ -119,5 +123,5 @@ h1 {
   margin-top:20px;
   font-size: 25px;
   color: #ffffffff;
-  font-family: Sans-Serif;
+  font-family: Times New Roman;
 }
