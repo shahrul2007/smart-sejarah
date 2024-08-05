@@ -125,7 +125,7 @@ const questions = [
   },
   {
     question: "Mengapakah institusi kehakiman harus bebas daripada pengaruh politik?",
-    choices: ["Memastikan keadilan dapat ditegakkan", "Mengelakkan kelewatan perbicaraan sesuatu kes", "Menentukan kesahihan buktiyang dikemukakan", "Menjamin perbicaraan kes pihak berkepentingan diutamakan"],
+    choices: ["Memastikan keadilan dapat ditegakkan", "Mengelakkan kelewatan perbicaraan sesuatu kes", "Menentukan kesahihan bukti yang dikemukakan", "Menjamin perbicaraan kes pihak berkepentingan diutamakan"],
     answer: "Memastikan keadilan dapat ditegakkan"
   },
   {
